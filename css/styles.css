@@ -9,11 +9,14 @@ body {
 font-family: var(--main-font), sans-serif;
 font-family: 'Roboto', 'Raleway', sans-serif;}
 
-h1, h2, h3, h4, h5, h6, p, ul {
+h1, h2, h4, h5, h6, p, ul {
     margin-top: 0;
     margin-bottom: 0; 
 
 }
+
+h3 {margin-top: 0;   
+    margin-bottom: 10px;}
 
 .container {
     width: 1200px;
@@ -21,7 +24,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
 }
 
 /* common styles start */
@@ -33,7 +35,7 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* header section */
 
 .header-page {
-
+    border-bottom: 1px solid #ECECEC;
 }
 
 .header-page a {
@@ -89,7 +91,7 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;}
 
-/* hero section */
+/* Секция hero */
 
 .hero {
 background-color: rgba(47, 48, 58, 1); 
@@ -115,29 +117,38 @@ font: var(--main-font);
 font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
-
-display: inline-block;
-align-items: center;
-text-align: center;
 letter-spacing: 0.06em;
 
 cursor: pointer; 
-
 background-color: rgba(33, 150, 243, 1);
-justify-content: space-around;}
+justify-content: space-around;
+
+display: inline-block;
+border-radius: 4px;
+border-color: transparent;
+padding: 10px 32px;
+}
 
 .text-button:hover,
 .text-button:focus {
 background: #188CE8; }
 
-/* features section  */
+/* Секция property */
 
-.attention-detail {color: rgba(33, 33, 33, 1); 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.attention-detail {
+color: rgba(33, 33, 33, 1); 
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
-text-transform: uppercase;}
+text-transform: uppercase;
+
+}
 
 .punctuality {color: rgba(33, 33, 33, 1);
 font-weight: 700;
@@ -200,6 +211,9 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+
+margin-top: 94px;
+margin-bottom: 50px;
 }
 
 .pict-first {
@@ -215,6 +229,12 @@ background: url(web-ui-designers-are-developing-application-smartphones-team-cre
 .pict-thrd {
 
 background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+}
+
+/* Секція Наша команда */
+
+.team {
+    margin-bottom: 50px;
 }
 
 .sect-team {background-color: rgba(245, 244, 250, 1);}
@@ -326,24 +346,31 @@ font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
 
-letter-spacing: 0.03em;}
+letter-spacing: 0.03em;
+
+display: inline-block;
+margin-bottom: 20px;}
 
 .studio-white {color: white;} 
 
-.link-adr-ftr {color: rgba(255, 255, 255, 1);
-
+.link-adr-ftr {
+color: rgba(255, 255, 255, 1);
 font-weight: 400;
 font-size: 14px;
+letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;}
+display: inline-block;
+margin-bottom: 9px;}
 
-.link-mail-ftr {color: rgba(255, 255, 255, 0.6);
-
+.link-mail-ftr {
+color: rgba(255, 255, 255, 0.6);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
+letter-spacing: 0.03em;
 
-letter-spacing: 0.03em;}
+display: inline-block;
+margin-bottom: 9px;}
 
 .link-ph-ftr {color: rgba(255, 255, 255, 0.6);
 
@@ -353,11 +380,17 @@ line-height: 1.71;
 
 letter-spacing: 0.03em;}
 
-.footer-back {background-color: rgba(47, 48, 58, 1);}
+.footer-back {
+background-color: rgba(47, 48, 58, 1);
+padding-top: 60px;
+padding-bottom: 60px;
+}
 
 /* Portfolio page */
 
 ul {list-style: none;}
+
+/* Секція header */
 
 .first-nav-port { color: #212121;
 font-weight: 500;
@@ -379,18 +412,25 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 }
 
+/* Фильтр портфолио */
+
 .button-text {
 font: var(--main-font); 
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 
-text-align: center;
 letter-spacing: 0.03em;
 
 color: #212121;
 background: #F5F4FA;
 cursor: pointer; 
+
+display: inline-block;
+border-radius: 4px;
+border-color: transparent;
+height: 38px;
+padding: 6px 22px;
 
 }
 
@@ -400,6 +440,32 @@ color: #FFFFFF;
 background: #2196F3; 
 }
 
+.btn-all {
+min-width: 73px;
+}
+
+.btn-web {
+min-width: 128px;
+}
+
+.btn-apps {
+min-width: 145px;
+}
+
+.btn-dsgn {
+min-width: 103px;
+}
+
+.btn-mrktng {
+min-width: 130px;
+}
+
+
+.button-list {
+margin-bottom: 50px;
+}
+
+/* Service gallery */
 
 .name-service {font-weight: 700;
 font-size: 18px;
