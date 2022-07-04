@@ -9,6 +9,21 @@ body {
 font-family: var(--main-font), sans-serif;
 font-family: 'Roboto', 'Raleway', sans-serif;}
 
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin-top: 0;
+    margin-bottom: 0; 
+
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
 /* common styles start */
 
 .list {
@@ -17,7 +32,11 @@ font-family: 'Roboto', 'Raleway', sans-serif;}
 
 /* header section */
 
-.header-link a {
+.header-page {
+
+}
+
+.header-page a {
 text-decoration: none;
 }
 
@@ -70,12 +89,15 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;}
 
-.bg-hdr {background-color: rgba(47, 48, 58, 1);}
+/* hero section */
+
+.hero {
+background-color: rgba(47, 48, 58, 1); 
+text-align: center;
+}
 
 .contact-nav {font-style: normal;
 line-height: 1.71;}
-
-/* hero section */
 
 h1 {color: rgba(255, 255, 255, 1);
     
@@ -85,7 +107,8 @@ line-height: 1.36;
     
 text-align: center;
 letter-spacing: 0.06em;
-text-transform: uppercase;}
+text-transform: uppercase;
+margin-bottom: 30px;}
 
 .text-button {color: rgba(255, 255, 255, 1);
 font: var(--main-font);
@@ -93,7 +116,7 @@ font-weight: 700;
 font-size: 16px;
 line-height: 1.88;
 
-display: flex;
+display: inline-block;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
