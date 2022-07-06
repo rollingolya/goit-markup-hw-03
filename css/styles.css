@@ -3,6 +3,10 @@
 --main-font: 'Roboto';
 --secondary-font: 'Raleway';
     /* bg-colors */
+
+    /* other */
+--items: 3;
+--indent: 30px;
 }
 
 body { 
@@ -207,6 +211,8 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;}
 
+
+
 .idea-considerations {color: rgba(117, 117, 117, 1);
 
 font-weight: 400;
@@ -266,6 +272,20 @@ background: url(web-ui-designers-are-developing-application-smartphones-team-cre
 background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
 }
 
+.img-what-do {
+display: flex;
+padding: 0;
+}
+
+.pic-what-do {
+flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
+margin-right: 30px;
+}
+
+.pic-what-do:last-child {
+margin-right: 0;
+}
+
 /* Секція Наша команда */
 
 .team {
@@ -281,6 +301,29 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;} 
+
+.wrap {
+background: #FFFFFF;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+width: 270px;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+.team-list {
+display: flex;
+padding-left: 0;
+margin-right: 30px;
+}
+
+.team-icon {
+margin-right: 30px;
+}
+
+.team-icon:last-child {
+margin-right: 0;
+}
 
 .employee-first {
 background: url(4853.jpg);
@@ -466,8 +509,14 @@ border-radius: 4px;
 border-color: transparent;
 height: 38px;
 padding: 6px 22px;
-
+justify-content: space-between; 
+margin-right: 8px;
 }
+
+.btn-mrktng {
+margin-right: 0px;
+} 
+
 
 .button-text:hover,
 .button-text:focus {
@@ -498,6 +547,8 @@ min-width: 130px;
 
 .button-list {
 margin-bottom: 50px;
+display: flex;
+justify-content: center;
 }
 
 /* Service gallery */
@@ -517,3 +568,9 @@ color: #212121;
     
     color: #757575;
 } 
+
+.wrap-border {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    width: 370px;
+}
