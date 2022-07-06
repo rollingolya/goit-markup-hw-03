@@ -5,13 +5,28 @@
     /* bg-colors */
 
     /* other */
---items: 3;
+--items: 4;
 --indent: 30px;
 }
 
 body { 
 font-family: var(--main-font), sans-serif;
 font-family: 'Roboto', 'Raleway', sans-serif;}
+
+/* Сітка із застосуванням flex-box */
+
+.card-set {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: -15px;
+    }
+    
+.card-set-item {
+    flex-basis: calc(100% - ((var(--items)-1) * var(--indent)) / var(--items));
+    margin: 15px;
+    }
 
 /* reset */
 h1, h2, h4, h5, h6, p, ul {
@@ -42,6 +57,11 @@ h3 {margin-top: 0;
 
 .list {
     list-style: none;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* header section */
@@ -174,10 +194,19 @@ background: #188CE8; }
 
 /* Секция property */
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+.list-property {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: -15px;
+    }
+    
+    .element-property {
+    width: 270px;
+    flex-basis: calc(100% - ((var(--items)-1) * var(--indent)) / var(--items));
+    margin: 15px;
+    }
 
 .attention-detail {
 color: rgba(33, 33, 33, 1); 
@@ -210,8 +239,6 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;}
-
-
 
 .idea-considerations {color: rgba(117, 117, 117, 1);
 
@@ -553,6 +580,10 @@ justify-content: center;
 
 /* Service gallery */
 
+.all-services {
+--items: 3;
+}
+
 .name-service {font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -572,5 +603,6 @@ color: #212121;
 .wrap-border {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    border-top: transparent;
     width: 370px;
 }
