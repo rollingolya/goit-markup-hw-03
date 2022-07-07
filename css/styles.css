@@ -70,11 +70,15 @@ h3 {margin-top: 0;
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-container,
 .menu-nav-list {
 display: flex;
 align-items: center;
+margin-left: 93px;
+}
 
+.header-container {
+display: flex;
+align-items: center;
 }
 
 .nav-link{
@@ -97,7 +101,6 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 
-margin-left: 215px;
 padding-top: 25px;
 padding-bottom: 25px;
 }
