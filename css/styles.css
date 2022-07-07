@@ -77,13 +77,12 @@ align-items: center;
 
 }
 
-.first-nav,
-.scnd-nav,
-.thrd-nav:not(:last-child),
-.first-nav-port,
-.scnd-nav-port,
-.thrd-nav-port:not(:last-child) {
+.nav-link{
 margin-right: 50px;
+}
+
+.menu-nav-list .nav-link:last-child {
+margin-right: 0;
 }
 
 
