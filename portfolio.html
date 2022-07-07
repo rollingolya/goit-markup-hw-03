@@ -16,15 +16,15 @@
 </head>
 <body>
     <!-- Секція header -->
-    <header class="header-page container">
+    <header class="header-page">
       <div class="container header-container">
         <a class="logo" href="./index.html" aria-label="Посилання на студію" lang="en-us">Web<span class="studio">Studio</span></a>
           <!-- Секція Menu nav -->
           <nav>
             <ul class="menu-nav-list list">
-              <li class="nav-link"><a class="first-nav-port" href="./index.html" aria-label="Посилання на студию">Студия</a></li>
-              <li class="nav-link"><a class="scnd-nav-port current-link" href="/Портфолио">Портфолио</a></li>
-              <li class="nav-link"><a class="thrd-nav-port" href="/Контакты">Контакты</a></li>
+              <li class="nav-link"><a class="first-nav-port item-nav" href="./index.html" aria-label="Посилання на студию">Студия</a></li>
+              <li class="nav-link"><a class="scnd-nav-port item-nav current-link" href="/Портфолио">Портфолио</a></li>
+              <li class="nav-link"><a class="thrd-nav-port item-nav" href="/Контакты">Контакты</a></li>
             </ul>
           </nav>
           <div class="contact-nav">
@@ -36,15 +36,16 @@
         </div>
       </header>
       <main>
-        <section class="container section">
-          <!-- <h1>Фильтр портфолио</h1> -->
-            <ul class="button-list">
-              <li><button class="button-text btn-all" type="button">Все</button></li>
-              <li><button class="button-text btn-web" type="button">Веб-сайты</button></li>
-              <li><button class="button-text btn-apps" type="button">Приложения</button></li>
-              <li><button class="button-text btn-dsgn" type="button">Дизайн</button></li>
-              <li><button class="button-text btn-mrktng" type="button">Маркетинг</button></li>
-          </ul>
+        <!-- <h1>Фильтр портфолио</h1> -->
+          <section class="section">
+            <div class="container">
+              <ul class="button-list">
+                <li><button class="button-text btn-all" type="button">Все</button></li>
+                <li><button class="button-text btn-web" type="button">Веб-сайты</button></li>
+                <li><button class="button-text btn-apps" type="button">Приложения</button></li>
+                <li><button class="button-text btn-dsgn" type="button">Дизайн</button></li>
+                <li><button class="button-text btn-mrktng" type="button">Маркетинг</button></li>
+            </ul>
           <!-- Service gallery -->
         <ul class="all-services card-set">
             <li class="services-item card-set-item"> <img src="./images/portfolio-images/img-1.jpg" alt="Ноутбук" width="370">
@@ -75,15 +76,16 @@
                 <div class="wrap-border"><h2 class="name-service">Growing Business</h2><p class="type-service">Приложение</p></div>
               </li>
           </ul>
-        </section>   
-      </main>
-      <!--Секция Footer bg-->
+        </div>
+      </section>   
+    </main>
+    <!--Секция Footer bg-->
     <footer class="footer-back">
       <div class="container">
         <a class="logo-footer" href="./index.html" aria-label="Посилання на студію" lang="en-us">Web<span class="studio-white">Studio</span></a>
           <div class="contact">
             <address class="contact-nav">
-              <ul class="list">
+              <ul class="list ftr-list">
                 <li>
                   <a class="link-adr-ftr"
                     href="https://goo.gl/maps/piqngm7oDQpEDh6u6"

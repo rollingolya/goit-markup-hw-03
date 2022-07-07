@@ -129,6 +129,11 @@ letter-spacing: 0.02em;}
 
 .current-link { color: #2196F3;}
 
+.item-nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .link-mail {color: #757575;
 
 font-weight: 500;
@@ -155,6 +160,9 @@ margin-left: auto;}
 /* Секция hero */
 
 .hero {
+padding-top: 200px;
+padding-bottom: 200px;
+
 background-color: rgba(47, 48, 58, 1); 
 text-align: center;
 }
@@ -162,7 +170,12 @@ text-align: center;
 .contact-nav {font-style: normal;
 line-height: 1.71;}
 
-h1 {color: rgba(255, 255, 255, 1);
+h1 {
+width: 696px;
+margin-right: auto;
+margin-left:auto;
+    
+color: rgba(255, 255, 255, 1);
     
 font-weight: 900;
 font-size: 44px;
@@ -274,6 +287,12 @@ line-height: 1.71;
 
 letter-spacing: 0.03em;}
 
+/* Секція Чем мы занимаемся */
+
+.team-section {
+padding-top: 0;
+}
+
 .what-we-do {color: rgba(33, 33, 33, 1);
     
 font-weight: 700;
@@ -282,7 +301,6 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 
-margin-top: 94px;
 margin-bottom: 50px;
 }
 
@@ -457,6 +475,10 @@ letter-spacing: 0.03em;
 
 display: inline-block;
 margin-bottom: 20px;}
+
+.ftr-list {
+padding-left: 0;
+}
 
 .studio-white {color: white;} 
 
